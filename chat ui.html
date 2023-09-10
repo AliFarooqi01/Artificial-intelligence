@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat ui</title>
+    <link rel="icon" type="image/x-icon" href="./images/fav-icon1.png">
+    <!-- ///font-famil links//////////// -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!-- font-family: 'Oswald', sans-serif; -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2">
+    <!-- ///font-famil links//////////// -->
+
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ///////////// -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- ///////////////code pen ///////////////////////// -->
+    <link rel="apple-touch-icon" type="image/png"
+        href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <link rel="mask-icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg"
+        color="#111">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="navbar.js"></script>
+    <!-- ///////////////jquery////////////// -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- animation links -->
+    <script src="https://unpkg.com/splitting/dist/splitting.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-9f868722-3407-1e13-c76c-1f9cfb11cb11"
+        crossorigin=""></script>
+    <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+    <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+    <script
+        src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-6bce046e7128ddf9391ccf7acbecbf7ce0cbd7b6defbeb2e217a867f51485d25.js"></script>
+    <script
+        src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js"></script>
+    <script
+        src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+    <link rel="stylesheet" href="home.css">
+    <!-- our aos data scrool -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- our aos data scrool -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="jquary.js"></script>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,300">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400&family=Finger+Paint&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+    <div style="position: relative;" class="banner-section-outer">
+
+        <header>
+
+            <div id="mySidenav3" class="sidenav3">
+                <a class="hr1 closebtn" href="javascript:void(0)" onclick="closeNav2()">&times;</a>
+
+                <main class="site-wrapper">
+                    <div class="pt-table desktop-768">
+                        <div class="pt-tablecell page-home relative" style="background-image: url(https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+                  background-position: center;
+                  background-size: cover;">
+                            <div class="overlay"></div>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-offset-1 col-md-12 col-lg-offset-2 col-lg-8">
+                                        <div class="page-title  home text-center">
+
+                                            <span class="heading-page"> Welcome to My <span><img
+                                                        src="./images/artificiall.png" alt=""></span> Ai World
+                                            </span>
+
+                                        </div>
+
+                                        <div class="hexagon-menu clear">
+                                            <div class="hexagon-item">
+                                                <div class="hex-item">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                                <div class="hex-item">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                                <a class="hex-content" href="./index.html">
+                                                    <span class="hex-content-inner">
+                                                        <span class="icon">
+                                                            <i class="fa fa-universal-access"></i>
+                                                        </span>
+                                                        <span class="title">Home</span>
+                                                    </span>
+                                                    <svg viewBox="0 0 173.20508075688772 200" height="200" width="174"
+                                                        version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                                                            fill="#1e2530"></path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="hexagon-item">
+                                                <div class="hex-item">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                                <div class="hex-item">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                                <a class="hex-content" href="./About us.html">
+                                                    <span class="hex-content-inner">
+                                                        <span class="icon">
+                                                            <i class="fa fa-bullseye"></i>
+                                                        </span>
+                                                        <span class="title">About</span>
+                                                    </span>
+                                                    <svg viewBox="0 0 173.20508075688772 200" height="200" width="174"
+                                                        version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                                                            fill="#1e2530"></path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="hexagon-item">
+                                                <div class="hex-item">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                                <div class="hex-item">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                                <a class="hex-content" href="./service.html">
+                                                    <span class="hex-content-inner">
+                                                        <span class="icon">
+                                                            <i class="fa fa-braille"></i>
+                                                        </span>
+                                                        <span class="title">Services</span>
+                                                    </span>
+                                                    <svg viewBox="0 0 173.20508075688772 200" height="200" width="174"
+                                                        version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                                                            fill="#1e2530"></path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="hexagon-item">
+                                                <div class="hex-item">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                                <div class="hex-item">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                                <a class="hex-content" href="./features.html">
+                                                    <span class="hex-content-inner">
+                                                        <span class="icon">
+                                                            <i class="fa fa-id-badge"></i>
+                                                        </span>
+                                                        <span class="title">Features</span>
+                                                    </span>
+                                                    <svg viewBox="0 0 173.20508075688772 200" height="200" width="174"
+                                                        version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                                                            fill="#1e2530"></path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="hexagon-item">
+                                                <div class="hex-item">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                                <div class="hex-item">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                                <a class="hex-content" href="./blog-details.html">
+                                                    <span class="hex-content-inner">
+                                                        <span class="icon">
+                                                            <i class="fa fa-life-ring"></i>
+                                                        </span>
+                                                        <span class="title">blog</span>
+                                                    </span>
+                                                    <svg viewBox="0 0 173.20508075688772 200" height="200" width="174"
+                                                        version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                                                            fill="#1e2530"></path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="hexagon-item">
+                                                <div class="hex-item">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                                <div class="hex-item">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                                <a class="hex-content" href="./chatbot.html">
+                                                    <span class="hex-content-inner">
+                                                        <span class="icon">
+                                                            <i class="fa fa-clipboard"></i>
+                                                        </span>
+                                                        <span class="title">Projects</span>
+                                                    </span>
+                                                    <svg viewBox="0 0 173.20508075688772 200" height="200" width="174"
+                                                        version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                                                            fill="#1e2530"></path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="hexagon-item">
+                                                <div class="hex-item">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                                <div class="hex-item">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                                <a class="hex-content" href="./contact us .html">
+                                                    <span class="hex-content-inner">
+                                                        <span class="icon">
+                                                            <i class="fa fa-map-signs"></i>
+                                                        </span>
+                                                        <span class="title">Contact us</span>
+                                                    </span>
+                                                    <svg viewBox="0 0 173.20508075688772 200" height="200" width="174"
+                                                        version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                                                            fill="#1e2530"></path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+            </div>
+            <div id="header3" class="header3">
+
+
+                <nav class="navbar navbar-expand-lg navbar-color ">
+
+
+                    <a class="navbar-brand menuT">
+                        <span onclick="openNav2()" class="material-symbols-outlined  menu1 toggle-set">
+                            menu
+                        </span>
+                        <span class="nav-link-text"><img class="img-fluid" src="./images/logo-ai-down.png"
+                                alt=""></span>
+                    </a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav  mb-2 mb-lg-0 slot-ch">
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  a1" href="./index.html">
+                                    <span class="s1"> Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link a1" href="./About us.html">
+                                    <span class="s1"> About</span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link a1" href="./service.html">
+                                    <span class="s1"> Services</span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  a1" href="./features.html">
+                                    <span class="s1">Features</span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle a1" id="navbarDropdown" role="button"
+                                    aria-expanded="false">
+
+                                    <span class="s1"> blog</span>
+                                </a>
+                                <ul class="dropdown-menu  dropdown-content">
+                                    <li><a class="dropdown-item" href="./blog grid.html">Blog grid </a></li>
+                                    <li><a class="dropdown-item" href="./blog listing.html">Blog Listing</a></li>
+                                    <li><a class="dropdown-item" href="./blog-details.html">Blog details</a></li>
+
+
+
+
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle a1" id="navbarDropdown" role="button"
+                                    aria-expanded="false">
+
+                                    <span class="s1"> Projects</span>
+                                </a>
+                                <ul class="dropdown-menu  dropdown-content">
+                                    <li><a class="dropdown-item" href="./chatbot.html">Ai Chatbot</a></li>
+                                    <li><a class="dropdown-item" href="./automobile.html">Ai in Auto-Mobile</a></li>
+                                    <li><a class="dropdown-item" href="./space_science.html">Ai in Space_Science</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./education.html">Ai in Education</a></li>
+                                    <li><a class="dropdown-item" href="./heathcare.html">Ai in Healthcare</a></li>
+                                    <li><a class="dropdown-item" href="./syber security.html">AI in Syber_Security</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  a1" href="./contact us .html">
+
+                                    <span class="s1"> Contact us</span>
+                                </a>
+
+                            </li>
+
+
+                        </ul>
+
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <div class="chat-ui-sec">
+        <div id="header">
+            <h1>AI World!</h1>
+        </div>
+        <div id="message-section">
+            <div class="message" id="bot"><span id="bot-response">Hello.. I'm listening! Go on..</span></div>
+        </div>
+        <div id="input-section">
+            <input id="input" type="text" placeholder="Type a message" autocomplete="off" autofocus="autofocus" />
+            <button class="send" onclick="sendMessage()">
+                <div class="circle"><span class="material-symbols-rounded">send</span></div>
+            </button>
+        </div>
+
+
+    </div>
+    <!-- ///////////////////////////////////////////footer/////////////////////////////////////// -->
+    <footer class="footer_1">
+        <div class="container">
+            <figure class="side_shade">
+                <img class="img-fluid" src="./images/footer-sideshape.png" alt="">
+            </figure>
+            <div class="middle_bottom">
+
+
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-3 col-sm-6 col-12">
+                        <a href="./index.html">
+                            <figure class="footer-logo">
+                                <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"
+                                    src="./images/logo-ai-cng.png" class="img-fluid" alt="">
+                            </figure>
+                        </a>
+                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
+                            class="text-size-16 footer-text text-white">AI World technologies encompass tasks such as
+                            problem-solving, learning, reasoning, and perception, enabling machines to mimic cognitive
+                            functions.</p>
+                        <ul data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500"
+                            class="list-unstyled mb-0 social-icons">
+                            <li class="circle"><a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a>
+                            </li>
+                            <li class="circle"><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                            <li class="circle"><a href="https://pk.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-2    col-sm-12 col-6 d-md-block ">
+                        <div class="links">
+                            <h4 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700"
+                                class="heading text-white">Useful Links</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800"><i
+                                        class="fa fa-angle-right"></i><a href="./index.html"
+                                        class=" text-size-16 text text-decoration-none">Home</a></li>
+                                <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900"><i
+                                        class="fa fa-angle-right"></i><a href="./about.html"
+                                        class=" text-size-16 text text-decoration-none">About</a></li>
+                                <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000"><i
+                                        class="fa fa-angle-right"></i><a href="./service.html"
+                                        class=" text-size-16 text text-decoration-none">Services</a></li>
+                                <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1100"><i
+                                        class="fa fa-angle-right"></i><a href="./features.html"
+                                        class=" text-size-16 text text-decoration-none">Features</a></li>
+                                <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i
+                                        class="fa fa-angle-right"></i><a href="./blog listing.html"
+                                        class=" text-size-16 text text-decoration-none">Blog</a></li>
+                                <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1300"><i
+                                        class="fa fa-angle-right"></i><a href="./chatbot.html"
+                                        class=" text-size-16 text text-decoration-none">Projects</a></li>
+                                <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400"><i
+                                        class="fa fa-angle-right"></i><a href="./contact us .html"
+                                        class=" text-size-16 text text-decoration-none">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-6 d-lg-block ">
+                        <div class="links list-pd">
+                            <h4 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500"
+                                class="heading text-white">Our Services</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1600"><i
+                                        class="fa fa-angle-right"></i><a href="./Robotic_Automation.html"
+                                        class=" text-size-16 text text-decoration-none">Robotic Automation</a></li>
+
+                                <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1800"><i
+                                        class="fa fa-angle-right"></i><a href="./privacy and policy.html"
+                                        class=" text-size-16 text text-decoration-none">Privacy Policy</a></li>
+                                <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1900"><i
+                                        class="fa fa-angle-right"></i><a href="./terms condition.html"
+                                        class=" text-size-16 text text-decoration-none">Terms & condtion</a></li>
+                                <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="2000"><i
+                                        class="fa fa-angle-right"></i><a href="./faqs.html"
+                                        class=" text-size-16 text text-decoration-none">Faq</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-sm-block">
+                        <div class="icon">
+                            <h4 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2100"
+                                class="heading text-white">Contact us</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2200" class="text">
+                                    <i class="fa fa-phone fa-icon "></i>
+                                    <a href="tel:03111821181" class="mb-0 text text-decoration-none text-size-16">
+                                        +923111821181</a>
+                                </li>
+                                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2300" class="text">
+                                    <i class="fa fa-envelope fa-icon "></i>
+                                    <a href="mailto:alifarooqi.techitsys@gmail.com"
+                                        class="mb-0 text text-decoration-none text-size-16">alifarooqi.techitsys@gmail.com</a>
+                                </li>
+                                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2400" class="text">
+                                    <i class="fa fa-map-marker  "></i>
+                                    <p class="text-size-16">Plot A 92, Sector 7 A Surjani Town, Karachi City, Sindh</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    /////////////////////chat ui//////////////////////////////////////////////
+
+    const userMessage = [
+        ["hi", "hey", "hello"],
+        ["sure", "yes", "no"],
+        ["are you genious", "are you nerd", "are you intelligent"],
+        ["i hate you", "i dont like you"],
+        ["how are you", "how is life", "how are things", "how are you doing"],
+        ["how is corona", "how is covid 19", "how is covid19 situation"],
+        ["what are you doing", "what is going on", "what is up"],
+        ["how old are you"],
+        ["who are you", "are you human", "are you bot", "are you human or bot"],
+        ["who created you", "who made you", "who is your creator"],
+
+        [
+            "your name please",
+            "your name",
+            "may i know your name",
+            "what is your name",
+            "what call yourself"
+        ],
+        ["i love you"],
+        ["happy", "good", "fun", "wonderful", "fantastic", "cool", "very good"],
+        ["bad", "bored", "tired"],
+        ["help me", "tell me story", "tell me joke"],
+        ["ah", "ok", "okay", "nice", "welcome"],
+        ["thanks", "thank you"],
+        ["what should i eat today"],
+        ["bro"],
+        ["what", "why", "how", "where", "when"],
+        ["corona", "covid19", "coronavirus"],
+        ["you are funny"],
+        ["i dont know"],
+        ["boring"],
+        ["im tired"]
+    ];
+    const botReply = [
+        ["Hello!", "Hi!", "Hey!", "Hi there!"],
+        ["Okay"],
+        ["Yes I am! "],
+        ["I'm sorry about that. But I like you dude."],
+        [
+            "Fine... how are you?",
+            "Pretty well, how are you?",
+            "Fantastic, how are you?"
+        ],
+        ["Getting better. There?", "Somewhat okay!", "Yeah fine. Better stay home!"],
+
+        [
+            "Nothing much",
+            "About to go to sleep",
+            "Can you guess?",
+            "I don't know actually"
+        ],
+        ["I am always young."],
+        ["I am just a bot", "I am a bot. What are you?"],
+        ["Sabitha Kuppusamy"],
+        ["I am nameless", "I don't have a name"],
+        ["I love you too", "Me too"],
+        ["Have you ever felt bad?", "Glad to hear it"],
+        ["Why?", "Why? You shouldn't!", "Try watching TV", "Chat with me."],
+        ["What about?", "Once upon a time..."],
+        ["Tell me a story", "Tell me a joke", "Tell me about yourself"],
+        ["You're welcome"],
+        ["Briyani", "Burger", "Sushi", "Pizza"],
+        ["Dude!"],
+        ["Yes?"],
+        ["Please stay home"],
+        ["Glad to hear it"],
+        ["Say something interesting"],
+        ["Sorry for that. Let's chat!"],
+        ["Take some rest, Dude!"]
+    ];
+
+    const alternative = [
+        "Same here, dude.",
+        "That's cool! Go on...",
+        "Dude...",
+        "Ask something else...",
+        "Hey, I'm listening..."
+    ];
+
+    const synth = window.speechSynthesis;
+
+    function voiceControl(string) {
+        let u = new SpeechSynthesisUtterance(string);
+        u.text = string;
+        u.lang = "en-aus";
+        u.volume = 1;
+        u.rate = 1;
+        u.pitch = 1;
+        synth.speak(u);
+    }
+
+    function sendMessage() {
+        const inputField = document.getElementById("input");
+        let input = inputField.value.trim();
+        input != "" && output(input);
+        inputField.value = "";
+    }
+    document.addEventListener("DOMContentLoaded", () => {
+        const inputField = document.getElementById("input");
+        inputField.addEventListener("keydown", function (e) {
+            if (e.code === "Enter") {
+                let input = inputField.value.trim();
+                input != "" && output(input);
+                inputField.value = "";
+            }
+        });
+    });
+
+    function output(input) {
+        let product;
+
+        let text = input.toLowerCase().replace(/[^\w\s\d]/gi, "");
+
+        text = text
+            .replace(/[\W_]/g, " ")
+            .replace(/ a /g, " ")
+            .replace(/i feel /g, "")
+            .replace(/whats/g, "what is")
+            .replace(/please /g, "")
+            .replace(/ please/g, "")
+            .trim();
+
+        let comparedText = compare(userMessage, botReply, text);
+
+        product = comparedText
+            ? comparedText
+            : alternative[Math.floor(Math.random() * alternative.length)];
+        addChat(input, product);
+    }
+
+    function compare(triggerArray, replyArray, string) {
+        let item;
+        for (let x = 0; x < triggerArray.length; x++) {
+            for (let y = 0; y < replyArray.length; y++) {
+                if (triggerArray[x][y] == string) {
+                    items = replyArray[x];
+                    item = items[Math.floor(Math.random() * items.length)];
+                }
+            }
+        }
+        //containMessageCheck(string);
+        if (item) return item;
+        else return containMessageCheck(string);
+    }
+
+    function containMessageCheck(string) {
+        let expectedReply = [
+            [
+                "Good Bye, dude",
+                "Bye, See you!",
+                "Dude, Bye. Take care of your health in this situation."
+            ],
+            ["Good Night, dude", "Have a sound sleep", "Sweet dreams"],
+            ["Have a pleasant evening!", "Good evening too", "Evening!"],
+            ["Good morning, Have a great day!", "Morning, dude!"],
+            ["Good Afternoon", "Noon, dude!", "Afternoon, dude!"]
+        ];
+        let expectedMessage = [
+            ["bye", "tc", "take care"],
+            ["night", "good night"],
+            ["evening", "good evening"],
+            ["morning", "good morning"],
+            ["noon"]
+        ];
+        let item;
+        for (let x = 0; x < expectedMessage.length; x++) {
+            if (expectedMessage[x].includes(string)) {
+                items = expectedReply[x];
+                item = items[Math.floor(Math.random() * items.length)];
+            }
+        }
+        return item;
+    }
+    function addChat(input, product) {
+        const mainDiv = document.getElementById("message-section");
+        let userDiv = document.createElement("div");
+        userDiv.id = "user";
+        userDiv.classList.add("message");
+        userDiv.innerHTML = `<span id="user-response">${input}</span>`;
+        mainDiv.appendChild(userDiv);
+
+        let botDiv = document.createElement("div");
+        botDiv.id = "bot";
+        botDiv.classList.add("message");
+        botDiv.innerHTML = `<span id="bot-response">${product}</span>`;
+        mainDiv.appendChild(botDiv);
+        var scroll = document.getElementById("message-section");
+        scroll.scrollTop = scroll.scrollHeight;
+        voiceControl(product);
+    }
+</script>
+<!-- ////////////ANIMATION ALL PAGES INTEGRATE footer and navbar/////////////////////// -->
+<!-- our aos data -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 100,
+        duration: 6000,
+
+    });
+</script>
+
+</html>
